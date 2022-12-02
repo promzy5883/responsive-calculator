@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <i class="uil uil-brightness-half"></i>
+        <i class="uil uil-history"></i>
+      </div>
+      <div class="output">
+        <div class="calculation" id="calculation"></div>
+        <div class="result" id="result"></div>
+      </div>
+      <div class="buttons">
+        <button onclick="display('AC')" id="ac">AC</button>
+        <button onclick="clearing()">CL</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('+')" id="coloured">+</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('-')" id="coloured">-</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('*')" id="coloured">*</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('/')" id="coloured">/</button>
+        <button onclick="display('0')" id="zero">0</button>
+        <button onclick="display('.')">.</button>
+        <button id="equals">=</button>
+      </div>
+      <div class="footer">
+        <i class="uil uil-calculator"></i>
+        <i class="uil uil-bitcoin-circle"></i>
+        <i class="uil uil-setting"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
