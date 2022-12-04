@@ -12,16 +12,21 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <div class="header">
-        <i class="uil uil-brightness-half"></i>
+        <i class="uil uil-moon" id="dark" onclick="EnableDarkMode()"></i>
+        <i
+          class="uil uil-brightness-half"
+          id="light"
+          onclick="EnableLightMode()"
+        ></i>
         <i class="uil uil-history"></i>
       </div>
       <div class="output">
         <div class="calculation" id="calculation"></div>
         <div class="result" id="result"></div>
       </div>
-      <div class="buttons">
+      <div class="buttons" id="buttons">
         <button onclick="display('AC')" id="ac">AC</button>
         <button onclick="clearing()">CL</button>
         <button onclick="display('%')">%</button>
@@ -40,7 +45,7 @@
         <button onclick="display('/')" id="coloured">/</button>
         <button onclick="display('0')" id="zero">0</button>
         <button onclick="display('.')">.</button>
-        <button id="equals">=</button>
+        <button id="equals" onclick="calculateScreen()">=</button>
       </div>
       <div class="footer">
         <i class="uil uil-calculator"></i>
